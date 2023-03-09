@@ -13,6 +13,7 @@ warnings.filterwarnings('ignore')
 pd.options.display.float_format = '{:,}'.format
 
 app = dash.Dash(__name__)
+server = app.server
 
 path = 'https://raw.githubusercontent.com/garygillespie9/tobacco_data/main/Food_Sec_Calc.csv'
 df = pd.read_csv(path)
